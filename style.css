@@ -334,50 +334,93 @@ p {
 }
 
 .facilities-col:hover p {
-    background: rgb(175, 236, 255);
-    color: rgb(88, 88, 88);
+    background: rgb(200, 242, 255);
+    color: rgb(30, 28, 28);
     box-shadow: 0 0 20px 0px rgb(0, 0, 0)
 }
 
 /*---testimonials---*/
+.reviews {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.reviews h3 {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.testimonials {
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonials-col {
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    cursor: pointer;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 50px;
+
+
+
+}
 
 .testimonials h1 {
-    font-size: 56px;
+    margin: 0%;
+    font-size: 54px;
     font-weight: 600;
     text-align: center;
 }
 
 .testimonials p {
-
+    margin-top: 1%;
     color: #777;
     font-size: 18px;
     font-weight: 300;
     line-height: 22px;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 
-.testimonials-col {
-    flex-basis: 44%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-    background: #fff3f3;
-    padding: 30px;
-    cursor: pointer;
-    display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
+#comment {
+    color: #777;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 5px;
+    text-align: justify;
 }
 
 
+
+
 .testimonials-col img {
+    justify-content: baseline;
     height: 40px;
     margin-left: 5px;
     margin-right: 30px;
     border-radius: 50%;
 }
 
+.testimonials-col:hover {
+
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+}
+
+
+.testimonials-col .fa {
+    color: #f44336;
+}
 
 
 @media(max-width: 700px) {
@@ -452,6 +495,7 @@ p {
         font-weight: 300;
         line-height: 22px;
         padding: 10px;
+        text-align: center;
 
     }
 
@@ -478,6 +522,7 @@ p {
         font-weight: 300;
         line-height: 22px;
         padding: 10px;
+
 
     }
 
@@ -507,5 +552,37 @@ p {
         font-size: 14px;
         font-weight: 600;
         margin: 10px 0;
+    }
+
+    .testimonials h1 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .testimonials p {
+        color: #777;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+
+    .testimonials-col {
+        margin-top: 5%;
+    }
+
+    .reviews {
+        flex-direction: column;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+
+    }
+
+    #comment {
+        color: #777;
+        font-size: 12px;
+
     }
 }
